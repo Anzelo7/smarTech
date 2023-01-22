@@ -1,11 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { useState } from 'react';
-import {*} from .src/img/seller;
-import { Form, Button, Card, Row, Col } from 'react-bootstrap';
-import JSONDATA from './MOCK_DATA.json';
+import { Form, Button, Card, Row, Col, } from 'react-bootstrap';
+import { data } from './mock_data.js';
 
 function Main() {
-    const [searchTerm, setSerchTerm] = useState("");
+    const [search, setSearch] = useState("");
     return (
         <>
             <div>
@@ -26,37 +25,39 @@ function Main() {
                         className="me-2"
                         aria-label="Search"
                         onChange={(event) => {
-                            setSerchTerm(event.target.value);
+                            setSearch(event.target.value);
                         }}
                     />
                     <Button variant="outline-danger">Cerca</Button>
                 </Form>
             </div>
-            <div className='container-data'>
-                {JSONDATA.filter((val) => {
-                    if (searchTerm == "") {
-                        return val
-                    } else if (val.job.toLowerCase().includes(searchTerm.toLowerCase())) {
-                        return val
-                    }
-                }).map((val, key) => {
-                    return (
-                        <div className='mt-5' key={key}>
-                            < Row xs={1} md={2} className="g-4 p-3" >
-                                <Col>
-                                    <Card>
-                                        <img src="{val.image}" />
-                                        <Card.Body>
-                                            <Card.Title>{val.name}</Card.Title>
-                                            <Card.Text>{val.phone} - {val.email}</Card.Text>
-                                            <Card.Text className='fs-5'>{val.job}</Card.Text>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                            </Row >
-                        </div>
-                    );
-                })}
+            <div className='container-data d-flex justify-content-center flex-wrap'>
+                {data.filter((item) => {
+                    if (search === "") {
+                        return item;
+                    } else if (item.full_name.toLower().includes(search.toLowerCase())) {
+                        return item;
+                    } return item;
+                })
+                    .map((item) => {
+                        return (
+                            <div className='d-flex mt-4' key={item.id}>
+                                < Row xs={1} md={1} className="g-4 p-3" >
+                                    <Col>
+                                        <Card>
+                                            <Card.Img src={item.image} />
+                                            <Card.Body>
+                                                <Card.Title>{item.full_name}</Card.Title>
+                                                <Card.Text>{item.title}</Card.Text>
+                                                <Card.Text>{item.phone} - {item.email}</Card.Text>
+                                                <Card.Text className='fs-6' style={{ width: '20rem' }}>{}</Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                </Row >
+                            </div>
+                        )
+                    })}
             </div>
 
         </>

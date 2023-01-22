@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card } from 'react-bootstrap';
-import Sample from '../img/SampleNB.png';
-import Logobig from '../img/smarTechBig.png';
+import Sample from './../img/SampleNB.png';
+import Logobig from './../img/smarTechBig.png';
 
 function Header() {
     return (
