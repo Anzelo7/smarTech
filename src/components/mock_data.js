@@ -5,7 +5,7 @@ export const data = [
         title: "Career Coach",
         email: "sbaxstar5@gmail.com",
         phone: "+39 837-9786",
-        job:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe animi cum quisquam minus, magni at incidunt illum modi tenetur, assumenda aspernatur consectetur sapiente quibusdam earum reprehenderit provident dolore harum aperiam."
+        job:"L'assistenza al cliente è il primo passo per un'azienda sana, la mia missione è seguire chi cerca un impiego nel mondo del digitale, accompagnandolo verso un inzio smart!."
     },
     {
         image:"src/img/seller/avatar2.png",
