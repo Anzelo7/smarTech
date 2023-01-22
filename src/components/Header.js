@@ -7,9 +7,9 @@ function Header() {
     return (
         <>
             <div>
-                <Card.Img variant="top" src={Logobig} className="mb-4 mt-5" style={{ width: '30rem' }} />
+                <Card.Img variant="top" src={Logobig} className="mb-4 mt-4" style={{ width: '30rem' }} />
             </div>
-            <div className="mt-5 d-flex justify-content-center flex-wrap">
+            <div className="mt-4 d-flex justify-content-center">
                 <Card className="" border="light" style={{ width: '70rem', backgroundColor: '#f5f4f2' }}>
                     <Card.Body>
                         <Card.Text className="fs-4 mb-3">
