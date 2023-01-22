@@ -10,7 +10,7 @@
         "job":""
     },
     {
-        "image":"src/img/logo.png",
+        "image":"src/img/seller/avatar2.png",
         "name": "Ruy Blonden",
         "title": "Ingegnere Nucleare",
         "email": "rblonden1@gmail.com",
@@ -18,7 +18,7 @@
         "job":""
     },
     {
-        "image":"src/img/logo.png",
+        "image":"src/img/seller/avatar3.png",
         "name": "Artur Nobriga",
         "title": "Assistente Ingegnere Edile",
         "email": "artbriga2@gmail.com",
@@ -26,7 +26,7 @@
         "job":""
     },
     {
-        "image":"src/img/logo.png",
+        "image":"src/img/seller/avatar4.png",
         "name": "Pierrette Cheavin",
         "title": "Web Developer",
         "email": "pcheavin3@gmail.com",
@@ -34,7 +34,7 @@
         "job":""
     },
     {
-        "image":"src/img/logo.png",
+        "image":"src/img/seller/avatar5.png",
         "name": "Skip Camerati",
         "title": "Editore",
         "email": "scamerati4@gmail.como",
@@ -42,7 +42,7 @@
         "job":""
     },
     {
-        "image":"src/img/logo.png",
+        "image":"src/img/seller/avatar6.png",
         "name": "Drona Corn",
         "title": "Software Developer",
         "email": "dcorn5@gmail.com",
@@ -50,7 +50,7 @@
         "job":"" 
     },
     {
-        "image":"src/img/logo.png",
+        "image":"src/img/seller/avatar7.png",
         "name": "Tejn Jeanequin",
         "title": "Tecnico Idraulico",
         "email": "tjeanequin6@gmail.com",
@@ -58,7 +58,7 @@
         "job":""
     },
     {
-        "image":"src/img/logo.png",
+        "image":"src/img/seller/avatar8.png",
         "name": "Des MacAn",
         "title": "Ingegnere Agricolo",
         "email": "dmacan7@gmail.com",
@@ -66,7 +66,7 @@
         "job":""
     },
     {
-        "image":"src/img/logo.png",
+        "image":"src/img/seller/avatar9.png",
         "name": "Danila Fantone",
         "title": "Chief Risorse Umane",
         "email": "dfantone8@gmail.com",
@@ -74,7 +74,7 @@
         "job":""
     },
     {
-        "image":"src/img/logo.png",
+        "image":"src/img/seller/avatar10.png",
         "name": "Elfie Joutapaitis",
         "title": "Commercialista",
         "email": "ejoutapaitis9@gmail.com",
@@ -82,7 +82,7 @@
         "job":""
     },
     {
-        "image":"src/img/logo.png",
+        "image":"src/img/seller/avatar11.png",
         "name": "Pauline Ashmole",
         "title": "Avvocato",
         "email": "pashmolea@gmail.com",
@@ -90,7 +90,7 @@
         "job":""
     },
     {
-        "image":"src/img/logo.png",
+        "image":"src/img/seller/avatar12.png",
         "name": "Derry Durie",
         "title": "Sviluppatore di Sistemi",
         "email": "durieD@gmail.com",
