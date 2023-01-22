@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 import { useState } from 'react';
-import { Form, Button, Card, Row, Col, } from 'react-bootstrap';
+import { Form, Button, Card, Row, Col } from 'react-bootstrap';
 import { data } from './mock_data.js';
 
 function Main() {
@@ -35,29 +35,28 @@ function Main() {
                 {data.filter((item) => {
                     if (search === "") {
                         return item;
-                    } else if (item.full_name.toLower().includes(search.toLowerCase())) {
+                    } else if (item.job.toLowerCase().includes(search.toLowerCase())) {
                         return item;
                     } return item;
-                })
-                    .map((item) => {
-                        return (
-                            <div className='d-flex mt-4' key={item.id}>
-                                < Row xs={1} md={1} className="g-4 p-3" >
-                                    <Col>
-                                        <Card>
-                                            <Card.Img src={item.image} />
-                                            <Card.Body>
-                                                <Card.Title>{item.full_name}</Card.Title>
-                                                <Card.Text>{item.title}</Card.Text>
-                                                <Card.Text>{item.phone} - {item.email}</Card.Text>
-                                                <Card.Text className='fs-6' style={{ width: '20rem' }}>{}</Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                </Row >
-                            </div>
-                        )
-                    })}
+                }).map((item) => {
+                    return (
+                        <div className='mt-5' key={item.id}>
+                            < Row xs={1} md={1} className="g-4 p-3" >
+                                <Col>
+                                    <Card>
+                                        <Card.Img src={item.image} />
+                                        <Card.Body>
+                                            <Card.Title>{item.full_name}</Card.Title>
+                                            <Card.Text className='fs-6 fw-semibold'>{item.title}</Card.Text>
+                                            <Card.Text>{item.phone} - {item.email}</Card.Text>
+                                            <Card.Text className='fs-6' style={{ width: '20rem' }}>{item.job}</Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                            </Row >
+                        </div>
+                    );
+                })}
             </div>
 
         </>
