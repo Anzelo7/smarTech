@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState } from 'react';
+import React, { useState } from 'react'
 import { Form, Button, Card, Row, Col } from 'react-bootstrap';
 import { data } from './mock_data.js';
 
@@ -24,8 +23,8 @@ function Main() {
                         placeholder="Cerca qui.."
                         className="me-2"
                         aria-label="Search"
-                        onChange={(event) => {
-                            setSearch(event.target.value);
+                        onChange={(e) => {
+                            setSearch(e.target.value);
                         }}
                     />
                     <Button variant="outline-danger">Cerca</Button>
@@ -44,7 +43,7 @@ function Main() {
                             < Row xs={1} md={1} className="g-4 p-3" >
                                 <Col>
                                     <Card>
-                                        <Card.Img src={item.image} />
+                                        <Card.Img src={item.image} alt=""/>
                                         <Card.Body>
                                             <Card.Title>{item.full_name}</Card.Title>
                                             <Card.Text className='fs-6 fw-semibold'>{item.title}</Card.Text>
@@ -63,6 +62,8 @@ function Main() {
     )
 }
 
-export default Main
+export default Main;
+
+
 
 
