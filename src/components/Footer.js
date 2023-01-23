@@ -11,7 +11,7 @@ function Footer() {
                 <i className="bi bi-twitter fs-2 mx-2" style={{ color: "white" }}></i>
                 <i className="bi bi-discord fs-2 mx-2" style={{ color: "white" }}></i>
             </div>
-            <div href="#" className='mt-1 mb-1'>
+            <div href="#" className='mt-1'>
                 <img
                     src={Logo}
                     width=""
