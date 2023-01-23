@@ -43,11 +43,11 @@ function Main() {
                             < Row xs={1} md={1} className="g-4 p-3" >
                                 <Col>
                                     <Card>
-                                        <Card.Img src={item.image} alt=""/>
+                                        <Card.Img src={item.image} alt="" />
                                         <Card.Body>
                                             <Card.Title>{item.full_name}</Card.Title>
                                             <Card.Text className='fs-6 fw-semibold'>{item.title}</Card.Text>
-                                            <Card.Text>{item.phone} - {item.email}</Card.Text>
+                                            <Card.Text>{item.phone} - <a href='#'>{item.email}</a></Card.Text>
                                             <Card.Text className='fs-6' style={{ width: '20rem' }}>{item.job}</Card.Text>
                                         </Card.Body>
                                     </Card>
