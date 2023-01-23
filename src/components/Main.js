@@ -43,7 +43,7 @@ function Main() {
                             < Row xs={1} md={1} className="g-4 p-3" >
                                 <Col>
                                     <Card>
-                                        <Card.Img src={item.image} alt=""/>
+                                        <img src={item.image} />
                                         <Card.Body>
                                             <Card.Title>{item.full_name}</Card.Title>
                                             <Card.Text className='fs-6 fw-semibold'>{item.title}</Card.Text>
