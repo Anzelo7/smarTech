@@ -41,9 +41,9 @@ function Main() {
                     return (
                         <div className='mt-5' key={item.id}>
                             < Row xs={1} md={1} className="g-4 p-3" >
-                                <Col>
-                                    <Card className='d-flex align-items-center border border-5 rounded-4 lh-sm' style={{ width: '23rem', backgroundColor: '#e1e1e1' }}>
-                                        <img className='rounded-circle border border-5 mt-2' src={DATA && DATA[8].image} alt='' style={{ width: '55%' }} />
+                                <Col className="">
+                                    <Card className='d-flex align-items-center border border-5 rounded-4 lh-sm' style={{ width: '21rem', height: '27rem', backgroundColor: '#e1e1e1' }}>
+                                        <img className='rounded-circle border border-5' src={DATA && DATA[8].image} alt='' style={{ width: '55%' }} />
                                         <Card.Body>
                                             <Card.Title className='fw-bold' style={{ color: "#1e1e1e" }}>{item.name}</Card.Title>
                                             <Card.Text className='fs-5' style={{ color: "#4d4d4d" }}>{item.title}</Card.Text>
