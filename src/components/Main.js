@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Form, Button, Card, Row, Col } from 'react-bootstrap';
-import { data } from './mock_data.js';
+import DATA from './data.json';
 
 function Main() {
     const [search, setSearch] = useState("");
@@ -31,7 +31,7 @@ function Main() {
                 </Form>
             </div>
             <div className='container-data d-flex justify-content-center flex-wrap'>
-                {data.filter((item) => {
+                {DATA.filter((item) => {
                     if (search === "") {
                         return item;
                     } else if (item.job.toLowerCase().includes(search.toLowerCase())) {
@@ -42,12 +42,12 @@ function Main() {
                         <div className='mt-5' key={item.id}>
                             < Row xs={1} md={1} className="g-4 p-3" >
                                 <Col>
-                                    <Card>
-                                        <img src={item.image} />
+                                    <Card className='d-flex align-items-center border border-4 rounded-4' style={{ width: '23rem', backgroundColor: '#cbcbcb' }}>
+                                        <img className='rounded-circle border border-4 mt-2' src={DATA && DATA[8].image} alt='' style={{ width: '50%' }} />
                                         <Card.Body>
-                                            <Card.Title>{item.full_name}</Card.Title>
-                                            <Card.Text className='fs-6 fw-semibold'>{item.title}</Card.Text>
-                                            <Card.Text>{item.phone} - <a href=''>{item.email}</a></Card.Text>
+                                            <Card.Title className='fw-semibold'>{item.name}</Card.Title>
+                                            <Card.Text className='fs-5'>{item.title}</Card.Text>
+                                            <Card.Text>{item.phone} - <a href='/#'>{item.email}</a></Card.Text>
                                             <Card.Text className='fs-6' style={{ width: '20rem' }}>{item.job}</Card.Text>
                                         </Card.Body>
                                     </Card>
