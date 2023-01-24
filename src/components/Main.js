@@ -42,13 +42,13 @@ function Main() {
                         <div className='mt-5' key={item.id}>
                             < Row xs={1} md={1} className="g-4 p-3" >
                                 <Col>
-                                    <Card className='d-flex align-items-center border border-4 rounded-4' style={{ width: '23rem', backgroundColor: '#cbcbcb' }}>
-                                        <img className='rounded-circle border border-4 mt-2' src={DATA && DATA[8].image} alt='' style={{ width: '50%' }} />
+                                    <Card className='d-flex align-items-center border border-5 rounded-4 lh-sm' style={{ width: '23rem', backgroundColor: '#e1e1e1' }}>
+                                        <img className='rounded-circle border border-5 mt-2' src={DATA && DATA[8].image} alt='' style={{ width: '55%' }} />
                                         <Card.Body>
-                                            <Card.Title className='fw-semibold'>{item.name}</Card.Title>
-                                            <Card.Text className='fs-5'>{item.title}</Card.Text>
-                                            <Card.Text>{item.phone} - <a href='/#'>{item.email}</a></Card.Text>
-                                            <Card.Text className='fs-6' style={{ width: '20rem' }}>{item.job}</Card.Text>
+                                            <Card.Title className='fw-bold' style={{ color: "#1e1e1e" }}>{item.name}</Card.Title>
+                                            <Card.Text className='fs-5' style={{ color: "#4d4d4d" }}>{item.title}</Card.Text>
+                                            <Card.Text>{item.phone} - <a href='/#' className='text-decoration-none' style={{ color: "#3f89fe" }}>{item.email}</a></Card.Text>
+                                            <Card.Text className='fs-6 text-secondary' style={{ width: '20rem' }}>{item.job}</Card.Text>
                                         </Card.Body>
                                     </Card>
                                 </Col>
